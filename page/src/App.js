@@ -1,18 +1,15 @@
 import React from 'react';
-import './App.css';
-import './index.css'
+import ReactDOM from 'react-dom';
 import myNav from './myNav';
 import mySologan from './mySologan';
 import myCopyright from './myCopyright';
- 
-function App() {
+
+export default function App() {
   return (
-    <div className='root'>
+    <div>
       {myNav()}
       {mySologan()}
       {myCopyright()}
     </div>
   )
 }
-
-export default App

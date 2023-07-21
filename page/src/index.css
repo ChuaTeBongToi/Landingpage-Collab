@@ -10,10 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Manrope:wght@500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,400;0,600;0,800;1,400;1,600;1,700;1,800&display=swap');
 
 
-body {
-  background-color: #5956E9;
-}
-
+ 
 svg {
   cursor: pointer;
 }
@@ -236,7 +233,7 @@ svg {
   align-items: center;
   flex-shrink: 0;
   border-radius: 20px;
-background: var(--color-primary, #5956E9);
+  background: var(--color-primary, #5956E9);
 }
 
 #email-sign-in p {
