@@ -24,7 +24,7 @@ svg {
 
 .nav {
   display: flex;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .logo {
@@ -105,7 +105,7 @@ svg {
   flex-direction: column;
   text-align: left;
   align-items: left;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .left-sologan h1 {
@@ -294,14 +294,6 @@ svg {
 }
 
 @media only screen and (max-width: 426px) {
-  body {
-    background-image: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   .sign-up-ctn {
     display: none;
   }
