@@ -10,8 +10,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 let num = 0;
 
 setInterval(() => {
-  render(
-    <App num={num} />
+  root.render(
+    <App num={num}/>,
   );
   num++;
 },1000
