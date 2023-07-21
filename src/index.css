@@ -196,9 +196,9 @@ svg {
   display: flex;
   width: 386px;
   height: 71px;
-  padding: 19px 97px 19.352px 98px;
   justify-content: center;
   align-items: center;
+  padding: 5px;
   flex-shrink: 0;
   border-radius: 20px;
   border: 1px solid #E3E6E9;
@@ -232,8 +232,8 @@ svg {
   display: flex;
   width: 386px;
   height: 71px;
-  padding: 19px 97px 19.352px 98px;
   justify-content: center;
+  padding: 5px;
   align-items: center;
   flex-shrink: 0;
   border-radius: 20px;
