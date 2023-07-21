@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Manrope:wght@500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,400;0,600;0,800;1,400;1,600;1,700;1,800&display=swap');
 
 
- 
+
 svg {
   cursor: pointer;
 }
@@ -281,9 +281,14 @@ svg {
   letter-spacing: -0.8px;
 }
 
-body {
-  background: url(Login\ -\ Step\ 1\ -\ Tablet.png) no-repeat center center fixed;
-  background-size: auto;
+#background {
+  z-index: -1;
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 99vh;
+  width: 100%;
 }
 
 @media only screen and (max-width: 426px) {
