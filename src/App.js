@@ -8,6 +8,7 @@ import './index.css'
 export default function App() {
   return (
     <div>
+      <h1>Hiiiii</h1>
       <img src={background} id='background'></img>
       {myNav()}
       {Sologan()}
