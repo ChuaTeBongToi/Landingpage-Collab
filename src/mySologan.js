@@ -70,7 +70,7 @@ export default function Sologan() {
                     <input autoComplete='off' id='account' type='text' onChange={handleAccountInput}/>
                     <input autoComplete='off' id='password' type='password' onChange={handlePassInput}/>
                 </form>
-                <button onClick={handleSignIn}>Alo</button>
+                <button onClick={handleSignIn}>Sign In to "World Of Wibuuu!!"</button>
                 <div className='sign-in'>
                     <p id='password-forget'>Forget password?</p>
                 </div>

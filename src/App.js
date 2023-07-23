@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
 import myNav from './myNav';
 import Sologan from './mySologan';
 import myCopyright from './myCopyright';
-import background from './Login - Step 1 edited.jpg'
-import { render } from '@testing-library/react';
+import background from './Login - Step 1 edited.png'
 import './index.css'
 
 export default function App() {
