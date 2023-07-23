@@ -8,10 +8,10 @@ import './index.css'
 export default function App() {
   return (
     <div>
-      <img src='background' id='background'/>
-      {myNav}
-      {Sologan}
-      {myCopyright}
+      <img src={background} id='background'></img>
+      {myNav()}
+      {Sologan()}
+      {myCopyright()}
     </div>
   )
 }
