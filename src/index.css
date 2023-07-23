@@ -5,10 +5,23 @@
   list-style: none;
 }
 
-body, html {
+body,
+html {
   box-sizing: border-box;
   height: 100%;
   margin: 0;
+}
+
+#ctn {
+  align-items: center;
+  text-align: center;
+  background-color: red;
+}
+
+#text {
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,400;0,600;0,800;1,400;1,600;1,700;1,800&display=swap');
@@ -288,9 +301,35 @@ svg {
 #background {
   z-index: -1;
   position: fixed;
+  background-image: url("Login\ -\ Step\ 1.png");
   background-repeat: no-repeat;
   background-size: auto;
   height: 100%;
+}
+
+#account, #password {
+  margin-top: 20px;
+  display: inline-flex;
+  padding: 15px;
+  width: 320px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid var(--stroke-super-light, #E3E6E9);
+  background: #fff;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 426px) {
