@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
-import myNav from './myNav';
-import Sologan from './mySologan';
-import myCopyright from './myCopyright';
-import background from './Login - Step 1 edited.png'
-import './index.css'
+import signUpPage from './signUpPage/signUpPage.js'
+import SignIn from './signInPage.js';
+import landingPage from './CollabLandingPage/landingPage.js';
+import { BrowserRouter, Routes, Route, Router, useNavigate } from "react-router-dom";
 
 export default function App() {
   return (
-    <div>
-      <img src={background} id='background'></img>
-      {myNav()}
-      {Sologan()}
-      {myCopyright()}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index='SignIn' element={<SignIn />} />
+        <Route path='landingpage' element={landingPage()} />
+      </Routes>
+    </BrowserRouter>
   )
 }

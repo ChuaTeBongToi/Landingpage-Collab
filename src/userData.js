@@ -5,8 +5,8 @@ export default {
             {
                 "id": "000000001",
                 "name": "WibuLapTrinh!",
-                "account": "hbaoanh2k9@gmail.com",
-                "password": "baoanh123"
+                "account": "1",
+                "password": "2"
             }
         ]
     }

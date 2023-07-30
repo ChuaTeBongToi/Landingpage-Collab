@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#background {
+    position: fixed;
+    height: 100%;
+    background: linear-gradient(180deg, #F3F6F8 0%, #ECF2F6 100%);
+}
