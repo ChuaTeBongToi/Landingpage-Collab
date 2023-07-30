@@ -7,10 +7,10 @@ import calendar from './Calendar _.png'
 import leftArrow from './Left arrow.png'
 import rightArrow from './Right arrow button.png'
 
-export default function landingPage() {
+export default function frame1() {
     return (
-         <div id={styles.root}>
-            <img src={background} id={styles.background} style={{zIndex:-2}} alt="background"></img>
+        <div id={styles.frame1root}>
+            <img src={background} id={styles.background} style={{ zIndex: -1 }} alt="background"></img>
             <div id={styles.frame1Ctn}>
                 <p>Features</p>
                 <div>
@@ -19,9 +19,11 @@ export default function landingPage() {
                 </div>
             </div>
             <ul id={styles.frame1list}>
-                <li>
-                    <img src={leftArrow}></img>
-                    <img src={rightArrow}></img>
+                <li id={styles.frame1item}>
+                    <div>
+                        <img src={leftArrow}></img>
+                        <img src={rightArrow}></img>
+                    </div>
                 </li>
                 <li>
                     <img src={camera}></img>
@@ -36,6 +38,6 @@ export default function landingPage() {
                     <h2>Find out more</h2>
                 </li>
             </ul>
-         </div>
+        </div>
     )
 }

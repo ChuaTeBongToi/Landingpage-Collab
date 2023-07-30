@@ -1,12 +1,12 @@
 import React from 'react';
 import './landingPage.module.css'
-import header from './headerLandingPage';
+import Header from './HeaderLandingPage';
 import frame1 from './frame1LandingPage';
 
 export default function landingPage() {
     return (
          <div>
-            {header()}
+            {Header()}
             {frame1()}
          </div>
     )

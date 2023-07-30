@@ -1,8 +1,20 @@
 import React from "react";
 import styles from './landingPage.module.css'
 import navBackground from './HERO HEADER.png'
+import dropDownMenuElement from './dropDownMenu'
+import { useState } from 'react';
 
-export default function header() {
+export default function Header() {
+    const [display, setDisplay] = useState('none');
+
+    function handleMouseEnter() {
+        setDisplay('block')
+    }
+
+    function handleMouseLeave() {
+        setTimeout(setDisplay('none'), 300)
+    }
+
     return (
         <div className="navRoot">
             <img src={navBackground} id={styles.background} alt="background"></img>
@@ -35,11 +47,11 @@ export default function header() {
                         <p>Tours</p>
                     </li>
 
-                    <li className={styles.navItem}>
+                    <li id={styles.exploreMenu} className={styles.navItem} onMouseEnter={() => handleMouseEnter()} onMouseLeave={() => handleMouseLeave()}>
                         <p>Explore</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6909 0.277089C14.0902 0.658684 14.1045 1.29169 13.7229 1.69094L7.72291 7.9686C7.53424 8.166 7.27306 8.27766 7 8.27766C6.72694 8.27766 6.46575 8.166 6.27708 7.9686L0.277084 1.69094C-0.10451 1.29169 -0.0901947 0.658683 0.309058 0.277088C0.708312 -0.104507 1.34132 -0.0901919 1.72291 0.309062L7 5.83035L12.2771 0.309062C12.6587 -0.0901914 13.2917 -0.104506 13.6909 0.277089Z" fill="#999FAE" />
-                        </svg>
+                        <div style={{display: display}}>
+                            {dropDownMenuElement()}
+                        </div>
                     </li>
                 </ul>
 
