@@ -29,7 +29,7 @@ img {
 
 #background {
     z-index: -1;
-    max-width: 100%; 
+    max-width: 100%;
     position: absolute;
     object-fit: contain;
 }
@@ -51,17 +51,6 @@ img {
     align-items: center;
     text-align: center;
     gap: 15px;
-}
-
-#logo span1 {
-    color: var(--text-dark, #292930);
-    font-family: Poppins;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 97.827%;
-    /* 27.392px */
-    letter-spacing: -0.84px;
 }
 
 #logo span {
@@ -120,6 +109,91 @@ img {
 #exploreMenu {
     display: flex;
     flex-direction: column;
+}
+
+.dropdownmenuctn {
+    cursor: pointer;
+}
+
+#dropdownmenu {
+    all: unset;
+    all: none;
+    all: initial;
+}
+
+.dropdownlist {
+    all: initial !important;
+    display: flex !important;
+}
+
+.dropdownlist hr {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 1px;
+    height: 248px;
+    opacity: 0.20000000298023224;
+    background: #999FAE;
+}
+
+#dropdownmenu {
+    margin-top: 20px;
+    position: absolute;
+    display: flex;
+    border-radius: 32px;
+    background: #FFF;
+    translate: -40%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.dropdownitem {
+    margin: 50px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 35px !important;
+    align-items: normal !important;
+    justify-content: normal !important;
+}
+
+.dropdownitem li {
+    display: flex;
+    width: max-content;
+}
+
+.dropdownitem img {
+    cursor: auto;
+    height: 35.843px;
+    flex-shrink: 0;
+}
+
+.dropdownitem h1 {
+    color: var(--color-dark, #27272E);
+    font-family: DM Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    /* 22px */
+    letter-spacing: -0.9px;
+}
+
+.dropdownitem h2 {
+    color: var(--color-dark, #27272E);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dropdownitem p {
+    color: var(--text-grey, #999FAE);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .navItem svg {
@@ -326,7 +400,7 @@ img {
 #frame1list {
     display: flex;
     margin-left: 15%;
-    margin-right: 20%;  
+    margin-right: 20%;
     margin-top: 10%;
     gap: 20%;
 }
