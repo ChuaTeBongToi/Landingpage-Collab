@@ -6,15 +6,20 @@ import { useState } from 'react';
 
 export default function Header() {
     const [display, setDisplay] = useState('none');
+    let checkMouseEnter = false;
 
-    function handleMouseEnter() {
+    const handleMouseEnter = () => {
         setDisplay('block')
+        checkMouseEnter = true;
     }
 
-    function handleMouseLeave() {
+    const handleMouseLeave = () => {
+        checkMouseEnter = false;
         setTimeout(() => {
-            setDisplay('none')
-        }, 1000);
+            if (checkMouseEnter === false) {
+                setDisplay('none')
+            }
+        }, 500);
     }
 
     return (
@@ -31,7 +36,7 @@ export default function Header() {
                             <circle cx="27.143" cy="27.143" r="5.71429" fill="#5956E9" />
                         </svg>
                         <h1>
-                            <span style={{color: '#292930'}}>Collab</span>
+                            <span style={{ color: '#292930' }}>Collab</span>
                             <span>.</span>
                         </h1>
                     </li>
@@ -51,7 +56,7 @@ export default function Header() {
 
                     <li id={styles.exploreMenu} className={styles.navItem} onMouseEnter={() => handleMouseEnter()} onMouseLeave={() => handleMouseLeave()}>
                         <p>Explore</p>
-                        <div className={styles.dropdownmenuctn} style={{display: display}} onMouseEnter={() => handleMouseEnter()} onMouseLeave={() => handleMouseLeave()}>
+                        <div className={styles.dropdownmenuctn} style={{ display: display }} onMouseEnter={() => handleMouseEnter()} onMouseLeave={() => handleMouseLeave()}>
                             {dropDownMenuElement()}
                         </div>
                     </li>
@@ -68,9 +73,9 @@ export default function Header() {
             <div className={styles.header}>
                 <h1>
                     <span>Create Like</span>
-                    <span style={{color: '#5956E9'}}>__ </span>
+                    <span style={{ color: '#5956E9' }}>__ </span>
                     <span>Never Before</span>
-                    <span style={{color: '#5956E9'}}>.</span>
+                    <span style={{ color: '#5956E9' }}>.</span>
                 </h1>
                 <p>Create, build, collaborate and ship products faster. Good bye code! 👋</p>
                 <div className={styles.headerCtn}>
