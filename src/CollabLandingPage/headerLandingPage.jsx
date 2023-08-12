@@ -23,7 +23,7 @@ export default function Header() {
     }
 
     return (
-        <div className="navRoot">
+        <div>
             <img src={navBackground} id={styles.background} alt="background"></img>
             <div className={styles.nav}>
                 <ul>
@@ -41,21 +41,20 @@ export default function Header() {
                         </h1>
                     </li>
 
-                    <li className={styles.navItemActivate}>
-                        <p>Features</p>
-                        <hr></hr>
+                    <li className={styles.navItem}>
+                        <h4>Features</h4>
                     </li>
 
                     <li className={styles.navItem}>
-                        <p>Pricing</p>
+                        <h4>Pricing</h4>
                     </li>
 
                     <li className={styles.navItem}>
-                        <p>Tours</p>
+                        <h4>Tours</h4>
                     </li>
 
                     <li id={styles.exploreMenu} className={styles.navItem} onMouseEnter={() => handleMouseEnter()} onMouseLeave={() => handleMouseLeave()}>
-                        <p>Explore</p>
+                        <h4>Explore</h4>
                         <div className={styles.dropdownmenuctn} style={{ display: display }} onMouseEnter={() => handleMouseEnter()} onMouseLeave={() => handleMouseLeave()}>
                             {dropDownMenuElement()}
                         </div>
